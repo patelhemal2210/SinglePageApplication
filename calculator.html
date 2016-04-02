@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Interest Calculator</h2>
+    <div class="form-group">
+        <label>Amount:</label>
+        <input type="number" class="form-control" placeholder="Enter Amount" ng-model="amoutValue">
+    </div>
+    <div class="form-group">
+        <label >Interest rate(%):</label>
+        <input type="number" min="0" max="100" class="form-control" placeholder="Enter Interset rate(%)" ng-model="InterestValue">
+    </div>
+    <div>
+        <label>ResultAmount : </label><span>{{amoutValue * InterestValue / 100 | currency}}</span>
+    </div>
+
+</body>
+</html>

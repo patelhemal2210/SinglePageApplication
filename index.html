@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="singlepageapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Work</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="homeController" class="bg-primary">
+    <nav class="navbar navbar-inverse">
+        <div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Single Page Demo</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#/">Home</a></li>
+                <li><a href="#/calculator">Calculator</a></li>
+                <li><a href="#/flickr">flickr</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ng-view >
+
+    </div>
+</body>
+</html>
